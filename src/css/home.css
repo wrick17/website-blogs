@@ -1,0 +1,125 @@
+.center {
+  text-align: center;
+}
+.home-layout {
+  height: 100vh;
+  background-color: white;
+  color: #111;
+}
+.home-layout a {
+  color: #111;
+}
+.topper {
+  padding-top: 60px;
+  background: #000;
+  color: #fff;
+  padding-bottom: 40px;
+}
+.home-content {
+  font-weight: 300;
+}
+.home-name {
+  font-size: 50px;
+  margin-bottom: 0;
+  margin-top: 40px;
+  font-weight: 700;
+  letter-spacing: -4px;
+  font-size: 45px;
+}
+@media (max-width: 400px) {
+  .home-name {
+    font-size: 40px;
+  }
+}
+.secondary-title,
+.tertiary-title {
+  font-weight: 300;
+}
+.secondary-title {
+  font-size: 30px;
+  text-transform: capitalize;
+  position: relative;
+  margin-bottom: 40px;
+}
+.secondary-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 120%;
+  transform: translateX(-50%);
+  border-bottom: 1px solid red;
+  width: 150px;
+}
+.face-logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.content p {
+  max-width: 100%;
+  width: 400px;
+  margin: auto;
+  font-size: 16px;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+.tertiary-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.spacer {
+  display: block;
+  margin-top: 30px;
+}
+.social-links {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.social-links li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+.shifted {
+  margin-left: -1px;
+}
+.social {
+  width: 24px;
+}
+.blog-link {
+  margin-top: 30px;
+}
+.blog-link button {
+  background-color: #000;
+  color: white;
+  padding: 8px 25px;
+  font-size: 16px;
+  margin-left: 15px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .topper,
+  .white {
+    height: 100vh;
+    padding-top: 50vh;
+  }
+  .content {
+    transform: translateY(-50%);
+    display: inline-block;
+    text-align: center;
+    padding: 0 40px;
+  }
+  .topper {
+    width: 35%;
+    min-width: 520px;
+    float: left;
+  }
+  .white {
+    width: 65%;
+    max-width: calc(100% - 520px);
+    float: left;
+  }
+}

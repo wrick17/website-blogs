@@ -1,0 +1,157 @@
+---
+serial: 1
+title: The Blog
+slug: /blogs/the-blog/
+description: The first blog where we discuss why I started this in the first place, how I cooked it up, what choices did I make and what came out of it.
+image: the-blog.svg
+---
+
+import Image from "@components/image"
+import theBlog from "@images/the-blog.svg"
+
+# The BLOG
+
+<Image src={theBlog} alt="The Blog" className="rainbow" />
+
+Welcome to my Blog. This is my first shot at writing, so please, bear with me.
+
+In this post we'll discuss why I started this Blog in the first place, how I cooked it up,
+what choices did I make and what came out of it.
+
+Keep in mind that I am a web developer, so the whole article might be a more tech focused at some point.
+
+I hope you have fun reading this post.
+
+<div className="gap" />
+
+<Image
+  src="https://media0.giphy.com/media/1M9fmo1WAFVK0/giphy.gif?cid=ecf05e4775dee972bd0cc886338ef652c80c85a5d04e689f&rid=giphy.gif"
+  alt="The Why"
+  source="Giphy"
+/>
+
+So why did I start a blog of my own?
+
+I've spent the last couple of years building web-apps and websites for different people and companies.
+I've even built a couple of blogging platforms for my friends, from scratch. I've spent days and nights
+to work out a full fledged blogging solution that has almost all the bells and whistles of a modern
+blogging platform
+
+That got me wondering one night. I am building Blogs for other people, why do I not have one of my own?
+
+So I started one. This platform is a place where I would just write about things that interest me.
+Things that excite me are computers, smartphones, headphones and it’s accessories, cars, anime and video games.
+I’m a nerd if that’s what you want to call me.
+
+So that’s enough ranting about me. Let’s move on to how I built it.
+
+<div className="gap" />
+
+<Image
+  src="https://media0.giphy.com/media/DfSXiR60W9MVq/giphy.gif?cid=ecf05e478f6e53eabb8e7c1a9b2727f0e20bce7f5ae39576&rid=giphy.gif"
+  alt="The Why"
+  source="Giphy"
+/>
+
+So let’s go through my thought process that went into designing this. Here’re a few things that I wanted in my Blogs
+
+- Simple
+- Fast
+- Easy to maintain
+- NOT Ugly
+
+<div className="gap" />
+
+<Image
+  src="https://media2.giphy.com/media/3OvvA11fPUvfYRFjxS/giphy.gif?cid=ecf05e473bbab43c36f5f2c4af1ff5cb298e065dce964b74&rid=giphy.gif"
+  alt="Simple"
+  source="Giphy"
+/>
+
+### Simple
+
+Everything should be simple. The setup, the layout, and even the style.
+So I chose [Gatsby](http://gatsbyjs.org/) as the base / boilerplate. Let me explain.
+
+Gatsby is a really powerful static site generator that uses [React](https://reactjs.org/).
+With a single command it can basically set up the whole project with a starter page and ready for you to
+start coding. Adding extra functionality is as easy as installing a [plugin](https://www.gatsbyjs.org/plugins/)
+and adding it to your config.
+
+I chose to go [Markdown](https://www.howtogeek.com/448323/what-is-markdown-and-how-do-you-use-it/)
+for my blog posts and they are the easiest to use.
+Now sure, I could have built a CMS or used and existing one like [Netlify](https://www.netlify.com/).
+But hey, I’m a web developer. I want my pages to be made out of code, and not some text in small little boxes.
+If I want a custom layout, I can just write it in few lines instead of writing a thousand more to modify the existing framework.
+So Markdown it is.
+
+For that I used [MDX](https://www.gatsbyjs.org/packages/gatsby-plugin-mdx/) that allows
+me to write the posts in Markdown while using React components in them. (Best of both worlds).
+
+For images, I have two options:
+
+- **Keep them locally** - I am keeping the smaller images in the codebase itself, mainly stuff that is needed for the layout. But it’s definitely not suited for bigger images as the codebase will become huge and un-manageable.
+- **Host them somewhere** - The only viable option I found was [Imgur](https://imgur.com/). For the most part it’s free, and also I can hack into using it as an image hosting service for the images used in my blogs. Probably down the line I can replace it with something more reliable, like Google Photos but for now, Imgur it is.
+
+<div className="gap" />
+
+<Image
+  src="https://media0.giphy.com/media/ZSvAC5c9RkW4g/giphy.gif?cid=ecf05e4781c5df27128eaf5e900287f748f366e4d63278de&rid=giphy.gif"
+  alt="Fast"
+  source="Giphy"
+/>
+
+### Fast
+
+I added the [Gatsby Offline Plugin](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/) to convert
+my blogs into a [PWA](https://web.dev/what-are-pwas/) for super fast loading and navigation times.
+
+All the images are lazy loaded so they only load when needed,
+saving you a lot of bandwidth and also making sure they don’t make you wait.
+
+The pages literally don’t have any excess code in them.
+Not even any of those handy dandy commenting boxes for people to discuss.
+If you want to talk to me, just email me. Simple.
+
+<div className="gap" />
+
+<Image
+  src="https://media1.tenor.com/images/14d181e9b831e6879b7020e8e48f4610/tenor.gif?itemid=13874805"
+  alt="Easy"
+  source="Tenor"
+/>
+
+### Easy to Maintain
+
+The whole project is basically a posts and their template pages. They compile to static HTML pages that gets served directly.
+There’s no backend APIs or databases to maintain or worry about downtime.
+I don’t have to host it on my own server and incur heavy bills at the end of the month for just a simple passion project of mine.
+
+So where are you hosting it?
+[Surge](https://surge.sh/). Its free for everyone unless you have very specific requirements in mind.
+I am already handling caching, HTTP/2 and HTTPS, redirections using [Cloudflare](https://www.cloudflare.com/)’s
+free tier, which has everything I need. The only thing I’m spending money on, is for my domain name.
+
+<div className="gap" />
+
+<Image
+  src="https://media1.giphy.com/media/TvVAUNS3tfqaQ/giphy.gif?cid=ecf05e4726262899fdd6ca244c47870180cbdf0ecb80dd98&rid=giphy.gif"
+  alt="Pretty"
+  source="Giphy"
+/>
+
+### NOT Ugly
+
+Okay, right off the bat, I’m not a designer. I am a developer. I do have a sense of what
+might be usable but pretty looking designs are definitely not my strengths. So I have tried my best at
+keeping it as clean and easy on the eyes as possible.
+
+I like dark themes very much. So, my blogs have a little theme switch on the top that lets you choose which side you are on.
+By default it’ll pick up your system’s theme. Handy huh?
+
+## Conclusion Time
+
+So what’s ahead? Well, This blog does not have any special focus like development or cooking.
+I’ll just write whatever I find interesting, from time to time and share my thoughts on the same.
+
+Hope to see you soon, Stay safe and good luck. 👍🏻

@@ -1,0 +1,143 @@
+/* Fira Code */
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode-VF.ttf') format("truetype-variations");
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode-VF.ttf') format("truetype-variations");
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode-VF.ttf') format("truetype-variations");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode-VF.ttf') format("truetype-variations");
+  font-weight: 350;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode-VF.ttf') format("truetype-variations");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode-VF.ttf') format("truetype-variations");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode-VF.ttf') format("truetype-variations");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode-VF.ttf') format("truetype-variations");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode-VF.ttf') format("truetype-variations");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode-VF.ttf') format("truetype-variations");
+  font-weight: 900;
+  font-display: swap;
+}
+
+/* Roboto Slab */
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab.ttf') format("truetype-variations");
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab.ttf') format("truetype-variations");
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab.ttf') format("truetype-variations");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab.ttf') format("truetype-variations");
+  font-weight: 350;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab.ttf') format("truetype-variations");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab.ttf') format("truetype-variations");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab.ttf') format("truetype-variations");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab.ttf') format("truetype-variations");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab.ttf') format("truetype-variations");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab.ttf') format("truetype-variations");
+  font-weight: 900;
+  font-display: swap;
+}
