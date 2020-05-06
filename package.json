@@ -38,7 +38,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "NODE_ENV=production npm run build && NODE_ENV=production npm run serve",
-    "pub": "NODE_ENV=production npm run build && surge public/ --domain https://super-shark.surge.sh",
+    "stage": "NODE_ENV=production npm run build && surge public/ --domain https://super-shark.surge.sh",
+    "prod": "sh publish.sh",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
+  }
 }
