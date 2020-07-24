@@ -17,5 +17,6 @@ jobs:
         with:
           node-version: 12
       - run: npm install -g surge
+      - run: NODE_ENV=production npm run build
       - run: surge ./public ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
       - run: surge ./public ${{ secrets.WEBSITE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
