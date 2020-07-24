@@ -9,6 +9,7 @@ import instagram from '@images/instagram.svg';
 import android from '@images/android.svg';
 import facebook from '@images/facebook.svg';
 import blog from '@images/blog.svg';
+import email from '@images/email.svg';
 
 import '@css/home.css';
 
@@ -43,6 +44,11 @@ const links = [
     href: 'https://www.facebook.com/pratyush.poddar.5',
     image: facebook,
     alt: 'Pratyush Poddar Facebook Link',
+  },
+  {
+    href: 'mailto:wrick17@gmail.com',
+    image: email,
+    alt: 'wrick17@gmail.com',
   },
 ];
 

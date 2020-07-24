@@ -10,6 +10,10 @@ import '@css/layout.css';
 import { defaultImage } from '@common';
 
 const Layout = ({ children, noHeader, headerProps, meta = {} }) => {
+  const title = meta.title || 'Pratyush Poddar | Wrick';
+  const description =
+    meta.description || 'About Pratyush Poddar (wrick17) and his blogs';
+  const link = meta.link || 'https://www.wrick17.com/';
   const imageSrc = meta.image
     ? meta.image.indexOf('http') === 0
       ? meta.image
@@ -24,26 +28,24 @@ const Layout = ({ children, noHeader, headerProps, meta = {} }) => {
           lang: 'en',
         }}
       >
-        <title>{meta.title || 'Wrick'}</title>
-        <link rel="canonical" href={meta.link || 'https://www.wrick17.com/'} />
+        <link rel="canonical" href={link} />
+        
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          content={
-            meta.description || 'About Pratyush Poddar (wrick17) and his blogs'
-          }
-        />
+        
+        <title>{title}</title>
+        <meta name="description" content={description} />
+
         <meta property="og:title" content={meta.title} />
-        {meta.description ? (
-          <meta
-            property="og:description"
-            content={
-              meta.description ||
-              'About Pratyush Poddar (wrick17) and his blogs'
-            }
-          />
-        ) : null}
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={imageSrc} />
+        <meta property="og:url" content={link} />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@wrick7132" />
+        <meta name="twitter:creator" content="@wrick7132" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
         <meta property="og:image" content={imageSrc} />
       </Helmet>
       <div className={noHeader ? '' : 'container'}>{children}</div>
