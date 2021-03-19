@@ -17,7 +17,7 @@ export default function PageTemplate({ data: { mdx } }) {
         image: mdx.frontmatter.image,
         link: `https://www.wrick17.com${mdx.frontmatter.slug}`,
       }}
-      headerProps={{ name: `# ${mdx.frontmatter.serial} ${mdx.frontmatter.title}`, level: 3 }}
+      headerProps={{ name: `# ${mdx.frontmatter.serial} - ${mdx.frontmatter.title}`, level: 3 }}
     >
       <div className="blog">
         <MDXProvider components={shortcodes}>
