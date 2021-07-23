@@ -118,13 +118,13 @@ const IndexPage = () => (
             ))}
           </ul>
           <div className="blog-link">
-            Read my
+            Maybe Read my
             <Link to="/blogs" className="no-link-color">
               <button>Blog</button>
             </Link>
           </div>
           <div className="blog-link">
-            <h3>Check out my fun little Projects</h3>
+            <h3>Or check out my fun little Projects</h3>
             {projects.map(({ title, link }) => (
               <span key={title} className="project">
                 <Link to={link} target="_blank" rel="noopener noreferrer">
