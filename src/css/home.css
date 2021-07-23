@@ -42,7 +42,7 @@
   margin-bottom: 40px;
 }
 .secondary-title::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 120%;
@@ -71,6 +71,10 @@
   display: block;
   margin-top: 30px;
 }
+.v-spacer {
+  display: inline-block;
+  margin-right: 30px;
+}
 .social-links {
   padding-left: 0;
   margin-bottom: 0;
@@ -88,7 +92,9 @@
   width: 24px;
 }
 .blog-link {
+  margin: auto;
   margin-top: 30px;
+  max-width: 300px;
 }
 .blog-link button {
   background-color: #000;
@@ -99,6 +105,10 @@
   border-radius: 50px;
   border: none;
   cursor: pointer;
+}
+.project {
+  display: inline-block;
+  margin-bottom: 15px;
 }
 @media (min-width: 992px) {
   .topper,

@@ -8,18 +8,17 @@ import twitter from '@images/twitter.svg';
 import instagram from '@images/instagram.svg';
 import android from '@images/android.svg';
 import facebook from '@images/facebook.svg';
-import blog from '@images/blog.svg';
 import email from '@images/email.svg';
 
 import '@css/home.css';
 
 const links = [
-  {
-    href: '/blogs',
-    image: blog,
-    alt: 'Pratyush Poddar Blog Link',
-    sameSite: true,
-  },
+  // {
+  //   href: '/blogs',
+  //   image: blog,
+  //   alt: 'Pratyush Poddar Blog Link',
+  //   sameSite: true,
+  // },
   {
     href: 'https://github.com/wrick17',
     image: github,
@@ -52,6 +51,25 @@ const links = [
   },
 ];
 
+const projects = [
+  {
+    title: 'CMDb',
+    link: 'https://cmdb.wrick17.com/',
+  },
+  {
+    title: 'jQuery Calendar Plugin',
+    link: 'https://calendar.wrick17.com/',
+  },
+  {
+    title: 'Slider Puzzle',
+    link: 'https://slideitup.wrick17.com/',
+  },
+  {
+    title: 'NoChatting',
+    link: 'https://nochatting.wrick17.com/',
+  },
+];
+
 const IndexPage = () => (
   <Layout noHeader>
     <div className="center home-layout">
@@ -65,14 +83,15 @@ const IndexPage = () => (
         <div className="content">
           <h2 className="secondary-title">Web Developer</h2>
           <p className="home-content">
-            Hi, I am Pratyush, a spider on the Web. When I am not{' '}
+            Hi, I am Pratyush, a spider on the Web. When I am not{" "}
             <a
               href="https://reactjs.org/"
               target="_blank"
               rel="noopener noreferrer"
             >
               React
-            </a>-ing to JS, I am either listening to Music, Gaming or watching
+            </a>
+            -ing to JS, I am either listening to Music, Gaming or watching
             Anime.
           </p>
           <div className="spacer" />
@@ -98,12 +117,23 @@ const IndexPage = () => (
               </li>
             ))}
           </ul>
-          {/* <div className="blog-link">
-            Or Read my
+          <div className="blog-link">
+            Read my
             <Link to="/blogs" className="no-link-color">
-              <button>Blogs</button>
+              <button>Blog</button>
             </Link>
-          </div> */}
+          </div>
+          <div className="blog-link">
+            <h3>Check out my fun little Projects</h3>
+            {projects.map(({ title, link }) => (
+              <span key={title} className="project">
+                <Link to={link} target="_blank" rel="noopener noreferrer">
+                  {title}
+                </Link>
+                <span className="v-spacer" />
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </div>

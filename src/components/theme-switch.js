@@ -51,6 +51,19 @@ const ThemeSwitch = () => {
         }
       }
     }
+
+    const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+    darkThemeMq.addEventListener('change', (e) => {
+      if (e.matches) {
+        localStorage.setItem('theme', 'dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
+        toggleSwitch.checked = true;
+      } else {
+        localStorage.setItem('theme', 'light');
+        document.documentElement.setAttribute('data-theme', 'light');
+        toggleSwitch.checked = false;
+      }
+    });
   }, []);
 
   return (
