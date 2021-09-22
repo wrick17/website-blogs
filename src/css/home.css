@@ -54,6 +54,8 @@
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  background-color: white;
+  border: 1px solid red;
 }
 .content p {
   max-width: 100%;
